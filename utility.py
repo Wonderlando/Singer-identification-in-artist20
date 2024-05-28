@@ -373,7 +373,7 @@ def get_vocal_idx(wave, n_fft, hop_length):
     db_std = np.std(db_frames, axis=1)
     return np.argwhere(db_frames[0]>db_avg+1*db_std)
 
-                    
+
 def load_dataset(song_folder_name='song_data',
                  artist_folder='artists',
                  voc_song_folder='voc_folder',
